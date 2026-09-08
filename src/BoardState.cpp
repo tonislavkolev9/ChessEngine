@@ -17,7 +17,7 @@ void initStartPosition(boardState& pos) {
         WR, WN, WB, WQ, WK, WB, WN, WR,
     };
 
-    // Copy the local board into the real boardState
+
     for (int i = 0; i < 64; i++)
         pos.board[i] = board[i];
 

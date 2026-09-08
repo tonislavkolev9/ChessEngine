@@ -10,7 +10,7 @@ struct boardState {
 
     bool whiteToMove = true;
 
-    int enPassantSquare = -1; // -1 means no en passant target
+    int enPassantSquare = -1;
 
     int white_pawns_list[MAX_PAWNS];
     int white_rooks_list[MAX_ROOKS];

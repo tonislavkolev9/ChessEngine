@@ -12,7 +12,7 @@ struct Move {
     int to;
 
     Piece captured = EMP;
-    int capturedIndex = -1; // Piece list index for undo
+    int capturedIndex = -1;
 
     Piece promotion = EMP;
     int oldEnPassant = -1;

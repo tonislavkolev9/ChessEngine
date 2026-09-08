@@ -11,8 +11,8 @@ const int MAX_KINGS = 2;
 enum Piece 
 {
     EMP = -1,
-    WP = 0, WR = 1, WN, WB, WQ, WK,   // White: Pawn, Rook, Knight, Bishop, Queen, King
-    BP, BR, BN, BB, BQ, BK            // Black: Pawn, Rook, Knight, Bishop, Queen, King
+    WP = 0, WR = 1, WN, WB, WQ, WK,
+    BP, BR, BN, BB, BQ, BK
 };
 
 #endif

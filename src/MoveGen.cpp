@@ -1,6 +1,6 @@
 #include "MoveGen.h"
 #include "Attacks.h"
-#include <cstdlib> // for abs()
+#include <cstdlib>
 
 Move movelist[256];
 int moveCount = 0;
@@ -260,13 +260,13 @@ void generateMove(boardState& pos) {
 }
 
         
-// ROOK SIDE
+// rook side
     if (pos.hasWhiteKingMoved == false && pos.hasWhiteKingsideRookMoved == false && pos.board[61] == EMP && pos.board[62] == EMP
         && !isSquareAttacked(60, false, pos) && !isSquareAttacked(61, false, pos) && !isSquareAttacked(62, false, pos) && pos.board[63] == WR) {
         movelist[moveCount++] = {60, 62, EMP};
     }
 
-    // QUEENSIDE
+    // queen side
         if (pos.hasWhiteKingMoved == false && pos.hasWhiteQueensideRookMoved == false && pos.board[57] == EMP && pos.board[58] == EMP && pos.board[59] == EMP
     && !isSquareAttacked(60, false, pos) && !isSquareAttacked(59, false, pos) && !isSquareAttacked(58, false, pos) && pos.board[56] == WR) {
         movelist[moveCount++] = {60, 58, EMP};
