@@ -138,4 +138,4 @@ Headers live in `include/`.
 
 ## License
 
-<!-- TODO: add a LICENSE file to the repo and state the license here. -->
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
